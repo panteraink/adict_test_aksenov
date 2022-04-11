@@ -1,0 +1,69 @@
+@use 'variables';
+
+.form_email-to-know, .form_email-to-know__white {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    & label:first-child {
+        flex: 1 0 auto;
+    }
+    & label:last-child {
+        flex: 0 1 161px;
+    }
+    @media (max-width: variables.$breakpoint_medium-to-small) {
+        & label:first-child {
+            flex: 0 0 auto;
+        }
+        & label:last-child {
+            flex: 0 0 108px;
+        }
+    }
+}
+
+.form_sent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 101%;
+    background: #F3F9FF;
+    border-radius: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+.form_sent::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 10px;
+    height: 16px;
+    border-bottom: 2px solid #99BA00;
+    border-right: 2px solid #99BA00;
+    transform: rotate(45deg) translateY(-100%);
+}
+.footer_form_sent {
+    visibility: hidden;
+    padding: 0 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101%;
+    height: 101%;
+    background: #F3F9FF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    & div:last-child {
+        margin-top: 20px;
+    }
+}
+.form_sent_visible {
+    visibility: visible;
+}

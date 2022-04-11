@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="scss/style.scss">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navigation">
+            <div class="navigation__logo">
+                <img src="./assets/everypay_logo.png" alt="Everypay">
+            </div>
+            <div class="navigation__buttons">
+                <div class="navigation__button"><a href="#">Как это работает?</a></div>
+                <div class="navigation__button"><a href="#">Для кого</a></div>
+                <div class="navigation__button"><a href="#">Кейсы</a></div>
+                <div class="navigation__button"><a href="#">Тарифы</a></div>
+                <div class="navigation__button"><a href="#">Безопасность</a></div>
+                <div class="navigation__button medium"><a href="#">Контакты</a></div>
+                <button class="navigation__button_enter button-filled">Вход</button>
+                <div class="navigation__button__lang">
+                    <div class="lang_active">ru</div>
+                    <div>en</div>
+                </div>
+            </div>
+            <button class="navigation__button__connect connect button-hollow">Подключиться</button>
+            <button class="navigation__menu-icon">
+                <img src="./assets/menu_icon.svg" alt="Menu">
+            </button>
+        </nav>
+        <div class="group-1">
+            <div class="slider_container">
+                <div class="slider">
+                    <div class="slide">
+                        <div class="slide__text">
+                            <h2 class="slide__text__header h0">Не пропускайте<br>важные оплаты</h2>
+                            <div class="slide__text_info text_info">Если от них зависят ваши проекты или старт<br>рекламных кампаний</div>
+                            <form action="#" class="slide__text__form form_email form_email-to-know">
+                                <label for=""><input class="input-text-dark" type="text" placeholder="Введите email"></label>
+                                <button class="button-filled" type="submit">Узнать</button>
+                                <div class="form_sent">Проверьте e-mail!</div>
+                            </form>
+                        </div>
+                        <div class="slide__image">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="./assets/slide-1_img_small.png">
+                                <img src="./assets/slide-1_img.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__text">
+                            <h2 class="slide__text__header h0">Сократите издержки на бухгалтерию и коммуникации</h2>
+                            <div class="slide__text_info text_info">Получайте информацию о платежах на счет компании там, где вам удобно</div>
+                            <form action="#" class="slide__text__form form_email form_email-to-know">
+                                <label for=""><input class="input-text-dark" type="text" placeholder="Введите email"></label>
+                                <button class="button-filled" type="submit">Узнать</button>
+                                <div class="form_sent">Проверьте e-mail!</div>
+                            </form>
+                        </div>
+                        <div class="slide__image">
+                            <img src="./assets/slide-2_img.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__text">
+                            <h2 class="slide__text__header h0">Создавайте собственные сценарии действий</h2>
+                            <div class="slide__text_info text_info">при поступлении денег на счет вашей компании</div>
+                            <form action="#" class="slide__text__form form_email form_email-to-know">
+                                <label for=""><input class="input-text-dark" type="text" placeholder="Введите email"></label>
+                                <button class="button-filled" type="submit">Узнать</button>
+                                <div class="form_sent">Проверьте e-mail!</div>
+                            </form>
+                        </div>
+                        <div class="slide__image">
+                            <img src="./assets/slide-3_img.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__text">
+                            <h2 class="slide__text__header h0">Реагируйте на платежи так быстро, как они поступают на ваш счет</h2>
+                            <div class="slide__text_info text_info"></div>
+                            <form action="#" class="slide__text__form form_email form_email-to-know">
+                                <label for=""><input class="input-text-dark" type="text" placeholder="Введите email"></label>
+                                <button class="button-filled" type="submit">Узнать</button>
+                                <div class="form_sent">Проверьте e-mail!</div>
+                            </form>
+                        </div>
+                        <div class="slide__image">
+                            <img src="./assets/slide-4_img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="group-1__buttons slider-buttons">
+                    <div class="slider-button-previous"></div>
+                    <div class="slider-button_pause"></div>
+                    <div class="slider-button-next"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="group-2">
+            <div class="group-2__text">
+                <h3 class="group-2__text__header h3">Мы предлагаем вам простой инструмент, чтобы автоматизировать информирование о поступающих оплатах.</h3>
+                <div class="group-2__text_info text_info">Бухгалтер на карантине, а директор недоступен? Ответственный сотрудник моментально узнает о поступлении денег на счет компании.</div>
+            </div>
+            <div class="group-2__image">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="./assets/group-2_img_small.png">
+                    <img src="./assets/group-2_img.png" alt="">
+                </picture>
+            </div>
+        </div>
+        <div class="group-how-it-works">
+            <h2 class="group-how-it-works__header h0">Как это работает</h2>
+            <div class="group-how-it-works__panels">
+                <div class="group-how-it-works__panel">
+                    <div class="group-how-it-works__panel__image">
+                        <picture>
+                            <source media="(max-width: 1440px)" srcset="./assets/group-how-it-works_img_1_small.png">
+                            <img src="./assets/group-how-it-works_img_1.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="group-how-it-works__panel__text_info text_info">Подключите свой банковский счет</div>
+                </div>
+                <div class="group-how-it-works__panel">
+                    <div class="group-how-it-works__panel__image">
+                        <picture>
+                            <source media="(max-width: 1440px)" srcset="./assets/group-how-it-works_img_2_small.png">
+                            <img src="./assets/group-how-it-works_img_2.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="group-how-it-works__panel__text_info text_info">Выберите, куда и кому отправлять информацию</div>
+                </div>
+                <div class="group-how-it-works__panel">
+                    <div class="group-how-it-works__panel__image">
+                        <picture>
+                            <source media="(max-width: 1440px)" srcset="./assets/group-how-it-works_img_3_small.png">
+                            <img src="./assets/group-how-it-works_img_3.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="group-how-it-works__panel__text_info text_info">Получайте информацию о поступивших оплатах</div>
+                </div>
+            </div>
+        </div>
+        <div class="group-automate">
+            <h2 class="group-automate__header h0">Автоматизируйте бизнес-процессы</h2>
+            <div class="group-automate__main">
+                <div class="group-automate__text_info text_info">Подключайте привычные приложения, которые вы используете в работе.</div>
+                <form action="#" class="group-automate__form form_email form_email-to-know__white">
+                    <label for=""><input class="input-text-light" type="email" placeholder="Введите email"></label>
+                    <button class="button-filled" type="submit">Узнать</button>
+                    <div class="form_sent">Проверьте e-mail!</div>
+                </form>
+            </div>
+        </div>
+        <div class="group-banks">
+            <h2 class="group-banks__header h0">Банки и интеграции</h2>
+            <div class="group-banks__banks-integrations">
+                <div class="group-banks__banks">
+                    <div class="group-banks__banks__header text_info">Банки</div>
+                    <div class="group-banks__banks__icons">
+                        <div class="group-banks__banks__icon">
+                            <picture>
+                                <source media="(max-width: 320px)" srcset="./assets/bank_tochka_small.png">
+                                <img src="./assets/bank_tochka.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="group-banks__banks__icon">
+                            <picture>
+                                <source media="(max-width: 320px)" srcset="./assets/bank_tinkoff_small.png">
+                                <img src="./assets/bank_tinkoff.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="group-banks__banks__icon">
+                            <picture>
+                                <source media="(max-width: 320px)" srcset="./assets/bank_modul_small.png">
+                                <img src="./assets/bank_modul.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="group-banks__banks__line"></div>
+                    <div class="group-banks__banks__upload-from-1c">
+                        <div class="group-banks__banks__upload-from-1c__plus">
+                            <img src="./assets/plus.svg" alt="">
+                        </div>
+                        <div class="group-banks__banks__upload-from-1c__icon">
+                            <img src="./assets/csv_logo.png" alt="">
+                        </div>
+                        <div class="group-banks__banks__upload-from-1c__text text_info">Загрузка из 1С</div>
+                    </div>
+                </div>
+                <div class="group-banks__integrations">
+                    <div class="group-banks__integrations__header text_info">Интеграции</div>
+                    <div class="group-banks__integrations__icons">
+                        <div class="group-banks__integrations__item">
+                            <div class="group-banks__integrations__item__image">
+                                <picture>
+                                    <source media="(max-width: 320px)" srcset="./assets/push_bell_small.png">
+                                    <img src="./assets/push_bell.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="group-banks__integrations__item__text text_info">Push-web уведомления</div>
+                        </div>
+                        <div class="group-banks__integrations__item">
+                            <div class="group-banks__integrations__item__image">
+                                <picture>
+                                    <source media="(max-width: 320px)" srcset="./assets/email_small.png">
+                                    <img src="./assets/email.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="group-banks__integrations__item__text text_info">E-mail уведомления</div>
+                        </div>
+                        <div class="group-banks__integrations__item">
+                            <div class="group-banks__integrations__item__image">
+                                <picture>
+                                    <source media="(max-width: 320px)" srcset="./assets/telegram_logo_small.png">
+                                    <img src="./assets/telegram_logo.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="group-banks__integrations__item__text text_info">Telegram</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="group-for-who">
+            <h2 class="group-for-who__header h0">Для кого</h2>
+            <div class="group-for-who__panels">
+                <div class="group-for-who__panel">
+                    <div class="group-for-who__panel__image">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./assets/group-for-who_small_business_small.png">
+                            <img src="./assets/group-for-who_small_business.png" alt="">
+                        </picture>
+                    </div>
+                    <h3 class="group-for-who__panel__header h3">Малый бизнес</h3>
+                    <div class="group-for-who__panel__text_info text_info">Скорость получения информации о платежах и минимизация издержек</div>
+                </div>
+                <div class="group-for-who__panel">
+                    <div class="group-for-who__panel__image">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./assets/group-for-who_small_stratup_small.png">
+                            <img src="./assets/group-for-who_small_stratup.png" alt="">
+                        </picture>
+                    </div>
+                    <h3 class="group-for-who__panel__header h3">Стартапы</h3>
+                    <div class="group-for-who__panel__text_info text_info">Автоматизация бизнес-процессов и бухгалтерской рутины</div>
+                </div>
+                <div class="group-for-who__panel">
+                    <div class="group-for-who__panel__image">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./assets/group-for-who_small_developers_small.png">
+                            <img src="./assets/group-for-who_small_developers.png" alt="">
+                        </picture>
+                    </div>
+                    <h3 class="group-for-who__panel__header h3">Разработчики</h3>
+                    <div class="group-for-who__panel__text_info text_info">Быстрое внедрение своих приложений для малого бизнеса и стартапов</div>
+                </div>
+            </div>
+        </div>
+        <div class="group-cases">
+            <h2 class="group-cases__header h0">Кейсы</h2>
+            <div class="group-cases__panels">
+                <div class="group-cases__panels__inner">
+                    <div class="group-cases__panel cases_active">
+                        <div class="group-cases__panel__icons">
+                            <img src="./assets/cases_bitrix_logo.png" alt="">
+                            <img src="./assets/cases_everypay_logo.png" alt="">
+                            <img src="./assets/cases_telegram_logo.png" alt="">
+                        </div>
+                        <h3 class="group-cases__panel__header h3">Автоматизация диджитал-агентства</h3>
+                        <a href="#">
+                            <div class="group-cases__panel__read">
+                                <div class="">Читать кейс</div>
+                                <div class=""></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="group-cases__panel">
+                        <div class="group-cases__panel__icons">
+                            <img src="./assets/cases_bitrix_logo.png" alt="">
+                            <img src="./assets/cases_everypay_logo.png" alt="">
+                            <img src="./assets/cases_tochka_logo.png" alt="">
+                        </div>
+                        <h3 class="group-cases__panel__header h3">Приём платежей в рекламной медиа-группе</h3>
+                        <a href="#">
+                            <div class="group-cases__panel__read">
+                                <div class="">Читать кейс</div>
+                                <div class=""></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="group-cases__panel">
+                        <div class="group-cases__panel__icons">
+                            <img src="./assets/cases_bitrix_logo.png" alt="">
+                            <img src="./assets/cases_everypay_logo.png" alt="">
+                            <img src="./assets/cases_tochka_logo.png" alt="">
+                        </div>
+                        <h3 class="group-cases__panel__header h3">Оптимизация бухгалтерии в производственной компании</h3>
+                        <a href="#">
+                            <div class="group-cases__panel__read">
+                                <div class="">Читать кейс</div>
+                                <div class=""></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="group-cases__radios">
+                <div class="group-cases__radio selected-radio"></div>
+                <div class="group-cases__radio"></div>
+                <div class="group-cases__radio"></div>
+                <div class="group-cases__radio"></div>
+                <div class="group-cases__radio"></div>
+            </div>
+        </div>
+        <div class="group-tariffs">
+            <div class="group-tariffs__image">
+                <picture>
+                    <source media="(max-width: 320px)" srcset="./assets/tariffs_ruble_small.png">
+                    <source media="(max-width: 768px)" srcset="./assets/tariffs_ruble_medium.png">
+                    <img src="./assets/tariffs_ruble.png" alt="">
+                </picture>
+            </div>
+            <h2 class="group-tariffs__header h0">Тарифы</h2>
+            <div class="group-tariffs__text text_lead">
+                <p>Everypay находится в стадии закрытого beta-теста, но у вас есть возможность присоединиться к тестированию сервиса.</p>
+                <p>Для компаний, участвующих в тестировании, сервис  навсегда бесплатен. Напишите нам и мы с вами свяжемся.</p>
+            </div>
+            <form action="#"  class="group-tariffs__form form_email form_email-to-know">
+                <label for=""><input class="input-text-dark" type="email" placeholder="Введите email"></label>
+                <button class="button-filled" type="submit">Узнать</button>
+                <div class="form_sent">Проверьте e-mail!</div>
+            </form>
+        </div>
+        <div class="group-soon">
+            <h2 class="group-soon__header h0">Скоро появится</h2>
+            <div class="group-soon__panels">
+                <div class="group-soon__panel">
+                    <h4 class="group-soon__panel__header h4">Интеграции с CRM-системами Битрикс 24 и amoCRM</h4>
+                    <div class="group-soon__panel__line"></div>
+                    <div class="group-soon__panel__text text_info">
+                        Интегрируйте уведомления о платежах прямо в вашу CRM, в которой работают ваши сотрудники
+                        <div class="group-soon__panel__text__logos">
+                            <div><img src="./assets/cases_bitrix_logo.png" alt=""></div>
+                            <div><img src="./assets/soon_amocrm.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-soon__panel">
+                    <h4 class="group-soon__panel__header h4">Открытое API Everypay</h4>
+                    <div class="group-soon__panel__line"></div>
+                    <div class="group-soon__panel__text text_info">
+                        Подключайте свои системы и интегрируйте уведомления о поступающих платежах самостоятельно с помощью простого API Everypay
+                    </div>
+                </div>
+                <div class="group-soon__panel">
+                    <h4 class="group-soon__panel__header h4">Автоматическое создание платежек</h4>
+                    <div class="group-soon__panel__line"></div>
+                    <div class="group-soon__panel__text text_info">
+                        Загрузите скан счета на оплату в нашу систему и в банк-клиенте автоматически будет создано платежное поручение на основании данных из счета. С помощью технологий компьютерного зрения и машинного обучения мы достигаем высокой точности и скорости работы
+                    </div>
+                </div>
+            </div>
+            <h3 class="group-soon__more h3">И еще 17 нововведений</h3>
+        </div>
+        <div class="group-security">
+            <div class="group-security__image">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="./assets/security_lock_small.png">
+                    <img src="./assets/security_lock.png" alt="">
+                </picture>
+            </div>
+            <h2 class="group-security__header h0">Безопасность</h2>
+            <div class="group-security__text text_lead">Использование Everypay полностью безопасно: подключение к банковскому счету осуществляется в режиме «только для получения выписок», а хранение информации в системе защищено и деперсонализировано.</div>
+        </div>
+    </div>
+    <div class="footer-background">
+        <footer class="footer-container">
+            <footer class="footer">
+                <div class="footer__connect-text">
+                    <h2 class="footer__connect-text__header h0">Подключиться</h2>
+                    <div class="footer__connect-text__anotation text_lead">Хотите начать пользоваться системой? Напишите нам.</div>
+                    <div class="footer__connect-text__mail text_lead"><span>email</span><br>hello@everypay.io</div>
+                </div>
+                <form action="#" class="footer__connect-form text_info">
+                    <label for=""><input class="input-text-light" type="text" name="" id="" placeholder="Ваше имя*" required="required"></label>
+                    <label for=""><input class="input-text-light" type="email" name="" id="" placeholder="Email*" required="required"></label>
+                    <label for=""><textarea class="input-textarea-light" name="" id="" required="required" placeholder="Расскажите о своей компании*"></textarea></label>
+                    <button class="button-filled connect" type="submit">Подключиться</button>
+                    <div class="footer_form_sent">
+                        <div>Спасибо!</div>
+                        <div>Мы приняли ваш запрос.</div>
+                        <div>В ближайшее время наш специалист<br>поддержки свяжется с вами.</div>
+                    </div>
+                </form>
+                <div class="footer__copyrights">
+                    <div class="footer__copyrights__itself">© 2020, Everypay</div>
+                    <div class="footer__copyrights__confidentiality text_info">Политика конфиденциальности</div>
+                </div>
+            </footer>
+        </footer>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>

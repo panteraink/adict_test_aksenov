@@ -1,0 +1,159 @@
+@use 'variables';  
+  a {
+    color: variables.$text;
+  }
+  .form_email-to-know {
+    background-color: variables.$input-background;
+    border-radius: 44px;
+  }
+  .input-text-dark {
+    background-color: variables.$input-background;
+    border-radius: 44px;
+  }
+  .wrapper {
+    background: url(../assets/how_bg.svg), url(../assets/v_bg.svg), url(../assets/v_bg.svg), url(../assets/v_bg.svg), url(../assets/v_bg.svg), url(../assets/v_angled_bg.svg), url(../assets/v_angled_bg.svg);
+    background-position: top 1475px left 0, top 450px right 36px, top 450px right 175px, bottom 3161px right -191px, bottom 2555px left 0, bottom 2364px left 0;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 347px 419px, 679.25px 557.24px, 679.25px 557.24px, 679.25px 557.24px, 679.25px 557.24px, 611px 765.84px, 6114px 765.84px;
+  }
+  .group-automate {
+    background: url(../assets/automate_bg.svg);
+    background-position: top 20.5px right 83.57px;
+    background-repeat: no-repeat;
+    background-size: 348px 417px;
+    background-color: #E8F4F7;
+  }
+  .slider-button-next, .slider-button-previous {
+    border-radius: 44px;
+    background-color: rgba(56, 152, 254, 0.187528);
+    cursor: pointer;
+  }
+  .slider-button_pause{
+    display: none;
+  }
+  .slider-button-next::after, .slider-button-previous::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: min(1.67vw, 24px);
+    height: min(1.67vw, 24px);
+    transform: rotate(-45deg) translateY(-60%);
+    border-bottom: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+  }
+  .slider-button-previous::after {
+    transform: rotate(135deg) translateY(60%);
+  }
+  .slider-button_pause::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    width: min(1.67vw, 24px);
+    height: min(1.67vw, 24px);
+    transform: translateY(-50%);
+    border-left: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+  }
+  .play::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform: translateY(-50%);
+    border: min(1.11vw, 16px) solid transparent;
+    border-left: min(1.11vw, 16px) solid #ffffff;
+  }
+  .form_email-to-know__white{
+    background: #FFFFFF;
+    border: 1px solid rgba(56, 152, 254, 0.4);
+    box-sizing: border-box;
+    border-radius: 40px;
+  }
+  .form_email-to-know {
+    background: #F3F9FF;
+    border-radius: 44px;
+  }
+  .group-banks__banks, .group-banks__integrations, .group-cases__panel {
+    border: 1px solid rgba(56, 152, 254, 0.187528);
+  }
+  .group-banks__banks__line {
+    border-top: 1px solid rgba(56, 152, 254, 0.187528);
+  }
+  .cases_active {
+    background: #F3F9FF;
+    border: none;
+    border-bottom: 3px solid #1792C7;
+  }
+  .group-soon__panel {
+    border-bottom: solid 1px rgba(0, 184, 240, 0.2);
+  }
+  .group-soon__panel__line {
+    background: variables.$gradient_light_horizontal;
+  }
+  .footer-background {
+    background: url(../assets/footer_bg.svg);
+    background-position: top 210px left -39px;
+    background-repeat: no-repeat;
+    background-size: 348px 417px;
+    background-color: #F3F9FF;
+  }
+  .footer__copyrights__confidentiality {
+    color: #00B8F0;
+  }
+  .footer__connect-text__mail > span {
+    color: rgba(56, 152, 254, 0.3);
+  }
+  .footer__connect-form input[type=text], .footer__connect-form input[type=email], .footer__connect-form textarea {
+    background: #FFFFFF;
+    border: 1px solid rgba(56, 152, 254, 0.4);
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+  .button-filled, .button-hollow {
+    background: variables.$gradient_dark;
+  }
+  .button-filled:hover, .button-hollow:hover {
+    box-shadow: 0px 6px 18px rgba(53, 152, 254, 0.38185);
+  }
+  .button-filled{
+    color: #FFFFFF;
+  }
+  .button-hollow {
+    position: relative;
+    background: #ffffff;
+    color: transparent;
+  }
+  .button-hollow::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: -1px;
+    background: variables.$gradient_dark;
+    border-radius: inherit;
+  }
+  .button-hollow::after {
+    content: 'Подключиться';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: inherit;
+    background: variables.$gradient_dark;
+    text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  @media (max-width: variables.$breakpoint_large-to-medium) {
+    .wrapper {
+      background: #ffffff;
+    }
+  }

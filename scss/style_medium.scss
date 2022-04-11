@@ -1,0 +1,60 @@
+@use 'clear';
+@use 'variables';
+@use 'layout_big';
+@use 'typography';
+@use 'forms';
+
+@media (max-width: variables.$breakpoint_large-to-medium) {
+    .wrapper {
+        
+    }
+    .navigation {
+        
+    }
+    .navigation__logo {
+    }
+    .navigation__buttons {
+        z-index: 100;
+        background-color: #ffffff;
+    }
+    .navigation__button {
+    }
+    .navigation__button_enter {
+        display: block;
+    }
+    .filled-button {
+    }
+    .navigation__button__lang {
+    }
+    .lang_active {
+        display: none;
+    }
+    .navigation__button__connect {
+    }
+    .connect {
+    }
+    .button-hollow {
+    }
+    .navigation__menu-icon {
+        background-color: #ffffff;
+    }
+    .group-cases__radio {
+        border: 1px solid #B2EEFC;
+        border-radius: 50%;
+    }
+    .selected-radio {
+        background: variables.$gradient_dark;
+    }
+    .footer-background {
+        background: #F3F9FF;
+    }
+    .footer__connect-form input[type=text], .footer__connect-form textarea {
+        background: #FFFFFF;
+        border: 1px solid rgba(56, 152, 254, 0.4);
+        box-sizing: border-box;
+        border-radius: 40px;
+      }
+    .footer__connect-form textarea{
+        border-radius: min(5.2vw, 40px);
+    }
+}
